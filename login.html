@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>LOGIN</title>
+	<style>
+		body
+		{
+			background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-dodger-blue-solid-color-background.jpg);
+		}
+		table
+		{
+			background-image: url(https://c8.alamy.com/comp/2E064N7/plain-white-background-or-wallpaper-abstract-image-2E064N7.jpg);
+		}
+	</style>
+	<script>
+		function validate()
+		{
+			var name=document.login.fname.value;
+			var password=document.login.pass.value;
+			var number=document.login.num.value;
+			var ot=document.login.otp.value;
+			if(name=="" || name=="null")
+			{
+				window.alert("enter your name");
+				return false;
+			}
+			if(password=="" || password=="null")
+			{
+				alert("enter your password");
+				return false;
+			}
+			if(number=="" || number=="null")
+			{
+				alert("enter your number");
+				return false;
+			}
+			if(ot=="" || ot=="null")
+			{
+				alert("enter your otp");
+				return false;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<form name="login" method="post">
+		<table align="center" cellpadding="10" cellspacing="20">
+			<tr>
+				<td><img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/DA30/production/_119365855_gettyimages-956327810.jpg" width="920px" height="190px"></td></tr>
+				<tr>
+				<td><h3>ENTER YOUR NAME</h3></td><td><input type="text" name="fname"></td>
+			</tr>
+		<tr><td><h3>Enter your password</h3></td><td><input type="password" name="pass"></td></tr>
+		<tr><td><h3>Enter your mobile number</h3></td><td><input type="number" name="num"></td></tr>
+		<tr><td><h3>Enter the otp</h3></td><td><input type="number" name="otp"></td></tr>
+		<tr><td><button type="submit" value="Submit" onclick="return validate()">Submit</button></td></button>
+		<td><h3><button type="reset" value="reset">Reset</button></h3></td></tr>
+			<tr><td><img src="https://media-exp1.licdn.com/dms/image/C5116AQF-cQin-szN1w/profile-displaybackgroundimage-shrink_200_800/0/1576712248208?e=2147483647&v=beta&t=r7ikxHNxn2V2u8HIllR7fZLPPvOTVhThGKfCSrjbokY" width="120%" height="10%"></td></tr>
+		</table>
+	</form>
+</body>
+</html>
